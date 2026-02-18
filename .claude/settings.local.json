@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/bash/create-new-feature.sh --json \"In-Memory Todo Console Application \\(Python\\)\n\nTarget audience:\nBeginner to intermediate Python developers reviewing spec-driven, agentic development workflows using Claude Code and Spec-Kit Plus.\n\nFocus:\nDemonstrate a fully in-memory, command-line Todo application built entirely through specifications, showcasing clean structure and basic CRUD-style task management.\n\nSuccess criteria:\n- Implements all 5 basic features: Add, View, Update, Delete, Mark Complete\n- Tasks have unique IDs, titles, optional descriptions, and completion status\n- Console output clearly displays task details and status\n- Application runs without errors using Python 3.13+\n- Specs fully drive planning and implementation with no manual coding\n\nConstraints:\n- Runtime storage only \\(no files, databases, or persistence\\)\n- Command-line interface only\n- Language: Python\n- Environment: UV\n- Clean, modular project structure under /src\n- Markdown-based specifications\n\nNot building:\n- GUI or web interface\n- Data persistence or user authentication\n- Advanced features \\(due dates, priorities, categories\\)\n- Third-party task management frameworks or libraries\" --number 1 --short-name \"todo-console-app\")",
+      "Bash(.specify/scripts/bash/setup-plan.sh --json)",
+      "Bash(.specify/scripts/bash/update-agent-context.sh claude)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(python test_validation.py)"
+    ]
+  }
+}

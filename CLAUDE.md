@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Python 3.13+ (as specified in feature requirements) + Standard library only, no third-party task management libraries (as specified in constraints) (001-todo-console-app)
+- In-memory only, no persistence to files or databases (as specified in requirements) (001-todo-console-app)
+
+## Recent Changes
+- 001-todo-console-app: Added Python 3.13+ (as specified in feature requirements) + Standard library only, no third-party task management libraries (as specified in constraints)
